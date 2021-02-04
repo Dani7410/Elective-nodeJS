@@ -79,7 +79,6 @@ function myfunc(letter) {
     }
     
 }
-
 myfunc(lettersExpanded);
 
 
@@ -100,6 +99,16 @@ console.log(newLetterExpanded);
 const numbers  = [5, 3, 2, 7, 11, 12, 0, -20, 6];
 
 const discardedNumbers = [];
+
+for(let i = 0; i <numbers.length; i++){
+if(numbers[i] > 6 || numbers[i] < 0){
+    console.log(numbers[i]);
+        }else{
+            discardedNumbers.push(numbers[i]);
+        }
+
+}
+console.log(discardedNumbers);
 
 // log the element if the number is above 6 or below 0
 // else push them to the array discardedNumbers
