@@ -6,11 +6,12 @@
 const myObj = {"message": "Hello, earthling! I bring peace."};
  
 //
-const getMessage = myObj['message'];
-const getMessage2 = Object.values(myObj['message']);
+const getMessage = myObj.message;
+//const getMessage2 = Object.values(myObj['message']);
 
 // Log the message 
 console.log(getMessage);
+console.log(myObj.message)
 // --------------------------------------
 // Exercise 2 - Defining an object. 
 
@@ -24,7 +25,7 @@ const stackOverflow = {};
 
 // make a rule called isAllowed and let the value be true
 
-stackOverflow.isAllowed = "true";
+stackOverflow.isAllowed = true;
 
 console.log(stackOverflow);
 

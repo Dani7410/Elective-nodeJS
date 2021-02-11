@@ -70,7 +70,7 @@ const subStringTwo = fact[17].toUpperCase()+fact.slice(18)
 //console.log(fact.slice(0,16)+" "+fact[17].toUpperCase()+fact.slice(18));
 //console.log(fact[17].toUpperCase()+fact.slice(18));
 
-console.log(substringOne +" "+ subStringTwo);
+
 // --------------------------------------
 
 

@@ -14,9 +14,20 @@ console.log(letters[1]);
 const friends = [];
 
 // What a lonely array. Add at least 3 friend objects to it.  
+const Frank = {
+    name: "Franke",
+    age: 23
+}
+const Anna = {
+    name: "Anna",
+    age: 22
+}
+const Henrik = {
+    name: "Henrik",
+    age: 77
+}
 
-
-friends.push("frank","thomas","Daniel");
+friends.push(Frank,Anna,Henrik,"frank","thomas","Daniel");
 
 console.log(friends);
 
@@ -57,14 +68,17 @@ console.log(diet);
 // Exercise 6 - Copy array
 
 // You really like your daily diet from last exercise. Copy it to a new array called dinnerTray so you can give it to a friend.  
-
+// the method unerneath is a no no 
 const dinnerTray = [];
 for (var i of diet){
     dinnerTray.push(i)
 }
-
 console.log(dinnerTray)
+// this is a yes yes 
+const dinnerTray1 = [...diet] // spread operator 
 
+console.log(dinnerTray1)
+//... - the spread operator - unpacks the element of an array 
 // --------------------------------------
 // Exercise 7 - For loop
 
@@ -82,7 +96,7 @@ function myfunc(letter) {
 myfunc(lettersExpanded);
 
 
-/*
+/*// this was a faulty try
 for(var i = 0; i < lettersExpanded.length; i+=2){
 
     console.log(newLetterExpanded)
@@ -98,21 +112,20 @@ console.log(newLetterExpanded);
 
 const numbers  = [5, 3, 2, 7, 11, 12, 0, -20, 6];
 
+
+// log the element if the number is above 6 or below 0
+// else push them to the array discardedNumbers
 const discardedNumbers = [];
 
 for(let i = 0; i <numbers.length; i++){
-if(numbers[i] > 6 || numbers[i] < 0){
+    if(numbers[i] > 6 || numbers[i] < 0){
     console.log(numbers[i]);
         }else{
             discardedNumbers.push(numbers[i]);
         }
 
 }
-console.log(discardedNumbers);
-
-// log the element if the number is above 6 or below 0
-// else push them to the array discardedNumbers
-
+console.log(discardedNumbers );
 // --------------------------------------
 
 
