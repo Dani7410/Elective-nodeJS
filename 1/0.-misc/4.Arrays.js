@@ -2,7 +2,7 @@
 // Arrays, for loops
 // --------------------------------------
 // Exercise 1 - Array Positioning
-
+/*
 const letters = ["a","b","c"];
 // show b in the console 
 
@@ -95,8 +95,9 @@ function myfunc(letter) {
 }
 myfunc(lettersExpanded);
 
-
-/*// this was a faulty try
+*/
+// this was a faulty try
+/*
 for(var i = 0; i < lettersExpanded.length; i+=2){
 
     console.log(newLetterExpanded)
@@ -106,7 +107,7 @@ console.log(newLetterExpanded);
 */
 //const ArrayTwo = lettersExpanded.filter()
 
-
+/*
 // --------------------------------------
 // Exercise 8 - For loop and if statement
 
@@ -128,4 +129,19 @@ for(let i = 0; i <numbers.length; i++){
 console.log(discardedNumbers );
 // --------------------------------------
 
+*/
 
+/*
+const data = [
+ {id:324, fname:"Daniel", lname:"Joketovic", mobile:3249824},
+ {id:324, fname:"Daniel", lname:"Joketovic", mobile:3249824},
+ {id:324, fname:"Daniel", lname:"Joketovic", mobile:3249824},
+ {id:324, fname:"Daniel", lname:"Joketovic", mobile:3249824},
+ {id:324, fname:"Daniel", lname:"Joketovic", mobile:3249824}
+]   
+
+const String =  
+
+const newArray = data.split("},{")
+console.log(newArray)
+*/
