@@ -1,6 +1,17 @@
 const express = require("express");
 const app = express();
 
+app.use(express.json());
+
+const cat = require("./cat.json");
+
+console.log(cat)
+
+app.get("/cat", (req, res) => {
+
+    res.send(cat)
+});
+
 //code
 //to write the variable to the string input //querystring?key=thebestvalue
 app.get("/querystring", (req,res) => {
@@ -22,4 +33,10 @@ app.post("/whatever", (req,res) =>{
 });
 
 
-app.listen(8080)// defines which port to run on 
+// defines which port to run on 
+app.listen(8000, (error) => {
+    if(error){
+        console.log(error)
+    }
+    console.log('server running on 3000'); 
+});

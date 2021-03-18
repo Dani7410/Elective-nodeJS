@@ -1,0 +1,19 @@
+//Methods in order
+
+
+GET
+/plants
+/plants/id
+
+POST
+/plants
+
+
+PATCH
+/plants/id
+
+
+DELETE
+/plants/id
+
+// create a server that implements the GET methods for plants
