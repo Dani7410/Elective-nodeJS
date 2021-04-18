@@ -16,6 +16,10 @@ app.get("/dragon", (req,res)=> {
 res.sendFile(__dirname + "/public/dragons/dragons.html")
 });
 
+app.get("/crypto", (req, res) =>{
+    res.sendFile(__dirname + "/public/crypto/crypto.html" );
+});
+
 app.get("/safeport", (req , res) =>{
     res.send({message: "you are safe here"})
 });
@@ -38,15 +42,27 @@ app.get("/potato", (req, res) =>{
 
 
 
+
+
 //const PORT = process.env.PORT ? process.env.PORT : 8080
 //skal kigges på
 const PORT = process.env.PORT || 8080;
 console.log(PORT);
 //npm run start-dev giver den rigtige forbindelse. 
 
-app.listen(PORT, error =>{
+const server = app.listen(PORT, error =>{
+    console.log("this will run second")
     if(error){
-        console.log(error)
+        console.log(error);
     }
-    console.log('Server running on', Number(PORT));
-})
+    console.log('Server running on', server.address().port);
+});
+//callbacks are for when we are waiting for a response
+//because we dont know when we will get the response we will continue until the response is ready
+//everything that takes time we want to use callbacks for having out system still run and not cause blocking. 
+// we use asynchournous behavior to not have the program stall and crash 
+console.log(server.address())
+console.log("this will run first")
+
+
+//function callback(())

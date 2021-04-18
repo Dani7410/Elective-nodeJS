@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dragons.css">
+    <link href="./dragons.css" rel="stylesheet" type="text/css">
     <title>Dragon Cave</title>
 </head>
 <body>
@@ -32,9 +32,15 @@
     <script>
         const dragonImage = `<img id= "dragon-img" src="https://cdn.pixabay.com/photo/2020/01/13/19/43/lizard-4763351_1280.jpg">`;
         //$("#1").append(dragonImage);
-        $(document).on("click", (event) =>{
-            console.log("keep on clicking")
-        })
+        // $(document).on("click", (event) =>{
+        //     console.log("keep on clicking")
+        // })
+
+        $("#1").append(dragonImage);
+
+        $(document).on("click", (event) => {
+        $("#1 #dragon-img").remove();
+        });
 
         /*
         red = true

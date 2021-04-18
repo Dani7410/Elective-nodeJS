@@ -1,0 +1,17 @@
+{
+  "name": "6.Nodefolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio for projects used with node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "cross-env PORT=8181 nodemon.cmd --ext 'js,html' app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1"
+  }
+}
