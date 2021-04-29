@@ -8,7 +8,7 @@ MongoClient.connect(url, {useUnifiedTopology: true}, (error, client) =>{
     }
 
     const db = client.db(dbname);
-    const actors = db.collection("movies");
+    const actors = db.collection("actors");
 
     actors.find().toArray((error, data) => {
         console.log(data)
