@@ -12,15 +12,23 @@ io.on("connection", (socket) =>{
     
     socket.on("colorSelected", (data) => {
         // change color of the current socket site
-        //socket.emit("changeColor", data);
+        socket.emit("changeColor", data);
 
         //change color of the current and all the other sockets
         //io.emit("changeColor", data);
 
         // change the color of all the sockets, but itself
         socket.broadcast.emit("changeColor", data);
-    })
+    });
+    
+    socket.on("disconnect", () => {
+        console.log("socket disconnected");
+    });
+
+
 })
+
+//Note: namespaces - 
 
 
 
